@@ -18,25 +18,22 @@ header {
     background-color: rgba(1, 1, 1, 0.839);
     display: flex;
     align-items: center;
-    height: 85px;
+    height: 150px;
 }
 
 header img{
-    width: 120px;
-    margin-right: 45%;
+    width: 200px;
+    margin-right: auto;
 }
 
 header h1 {
     display: inline-flex;
-    /* background-color: rgb(121, 147, 68); */
     font-size: 3rem;
     color: var(--heading-color);
     margin-left: 15px;
 }
 
 header nav{
-    display: inline-flex;
-    float: right;
     margin-bottom: 65px;
 }
 
@@ -51,12 +48,6 @@ header nav ul li {
 aside {
     flex: 1;
     color: var(--heading-color);
-    /* height: 100%; */
-    /* width: 20%; */
-    /* position: relative;
-    left: 10%; */
-    /* top: 50px; */
-    /* border-right: solid black; */
 }
 
 p {
@@ -199,55 +190,33 @@ header nav ul li:hover {
     background-color: white;
     color: red;
 }
-      
-/* header nav ul li:active {
-    font-size: 180%;
-    box-shadow: 0 0 10px #000 inset;
-}
-      
-header nav ul li:focus {
-    outline: none;
-    border-color: #8ac4ff;
-} */
 
 .card a:hover {
     background-color: white;
     color: red;
 }
       
-/* .card a:active {
-    font-size: 180%;
-    box-shadow: 0 0 10px #000 inset;
-}
-      
-.card a:focus {
-    outline: none;
-    border-color: #8ac4ff;
-} */
-
 .bigger-card a:hover {
     background-color: white;
     color: red;
 }
-      
-/* .bigger-card a:active {
-    font-size: 180%;
-    box-shadow: 0 0 10px #000 inset;
-}
-      
-.bigger-card a:focus {
-    outline: none;
-    border-color: #8ac4ff;
-}*/
 
 .aside-content nav ul li a:hover {
     background-color: white;
     color: red;
 }
 
-/* @media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) {
     .card {
         width: 50%;
+    }
+    header nav {
+        flex-direction: column; 
+        align-items: flex-end; 
+    }
+    header nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
     }
 }
 
@@ -255,5 +224,13 @@ header nav ul li:focus {
     .card {
         width: 50%;
     }
+    header nav {
+        flex-direction: column; 
+        align-items: flex-end; 
+    }
+    header nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
- */
+
