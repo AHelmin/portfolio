@@ -59,36 +59,22 @@ aside {
     /* border-right: solid black; */
 }
 
+p {
+    margin-bottom: 10px;
+}
+
 footer {
     text-align: center;
-    font-size: 1rem;
+}
+
+footer h4 {
+    font-size: 1.5rem;
 }
 
 aside h2 {
     font-size: 2rem;
     text-align: right;
     padding-right: 10px;
-}
-
-.bigger-card h2, .card h2 {
-    font-size: 1.5rem;
-    /* position: relative;
-    bottom: 70px;
-    left: 16px;
-    background-color: rgb(233, 219, 219);
-    margin-right: 46%; */
-    padding-left: 2%;
-
-}
-
-.bigger-card h3, .card h3 {
-    font-size: 1rem;
-    padding-left: 2%;
-    /* position: relative;
-    bottom: 70px;
-    left: 16px;
-    background-color: rgb(233, 219, 219);
-    margin-right: 60%; */
 }
 
 .banner {
@@ -146,40 +132,75 @@ aside h2 {
 }
 
 .card {
-    flex: 1;
-    border: 2px solid black;
+    flex: 0 0 500px;
+    height: 200px;
+    /* border: 2px solid black; */
     color: var(--heading-color);
     text-align: left;
     margin-bottom: 20px;
+    background-size: cover;
 }
 
-.card img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
+.card2 {
+    background-image: url("../images/delivery.jpeg");
+    background-repeat: no-repeat;
+}
+
+.card3 {
+    background-image: url("../images/NutritionFacts.jpeg");
+    background-repeat: no-repeat;
+}
+
+.card4 {
+    background-image: url("../images/bicycleOnTrail.jpeg");
+    background-repeat: no-repeat;
+}
+
+.card5 {
+    background-image: url("../images/mallMap.jpeg");
+    background-repeat: no-repeat;
 }
 
 .bigger-card {
-    flex: 2;
-    border: 2px solid black;
+    flex: 2 0 750px;
+    height: 400px;
     color: var(--heading-color);
     text-align: left;
     margin-bottom: 20px;
-    
+    margin-right: 14%;
+    background-image: url("../images/htmlcode.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.bigger-card img {
-    width: 600px;
-    height: 300px;
-    object-fit: cover;
+.bigger-card h2 {
+    font-size: 1.5rem;
+    position: relative;
+    top: 320px;
+    left: 16px;
+    background-color: rgba(213, 197, 197, 0.877);
+    margin-right: 76%;
+    padding-left: 2%;
+
 }
-    
+
+.card h2 {
+    font-size: 1.1rem;
+    position: relative;
+    top: 140px;
+    left: 10px;
+    background-color: rgba(213, 197, 197, 0.877);
+    margin-right: 56%;
+    padding-left: 2%;
+
+}
+
 header nav ul li:hover {
     background-color: white;
-    color: #fff;
+    color: red;
 }
       
-header nav ul li:active {
+/* header nav ul li:active {
     font-size: 180%;
     box-shadow: 0 0 10px #000 inset;
 }
@@ -187,11 +208,42 @@ header nav ul li:active {
 header nav ul li:focus {
     outline: none;
     border-color: #8ac4ff;
+} */
+
+.card a:hover {
+    background-color: white;
+    color: red;
 }
       
+/* .card a:active {
+    font-size: 180%;
+    box-shadow: 0 0 10px #000 inset;
+}
       
-      
+.card a:focus {
+    outline: none;
+    border-color: #8ac4ff;
+} */
 
+.bigger-card a:hover {
+    background-color: white;
+    color: red;
+}
+      
+/* .bigger-card a:active {
+    font-size: 180%;
+    box-shadow: 0 0 10px #000 inset;
+}
+      
+.bigger-card a:focus {
+    outline: none;
+    border-color: #8ac4ff;
+}*/
+
+.aside-content nav ul li a:hover {
+    background-color: white;
+    color: red;
+}
 
 /* @media screen and (max-width: 992px) {
     .card {

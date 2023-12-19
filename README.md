@@ -12,7 +12,9 @@ Installation is not required. The webpage is accessible from any web browser app
 
 ## Usage
 
-To use this service simply navigate to the website and begin exploring the information provided.
+To use this service simply navigate to the website address below and begin exploring the information provided.
+
+https://ahelmin.github.io/portfolio/
 
 ## Credits
 
