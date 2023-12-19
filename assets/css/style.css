@@ -11,9 +11,6 @@
 
 body {
    margin: 0;
-   display: inline-flex
-   flex-wrap: wrap;
-   justify-content: space-evenly;
 }
 
 header {
@@ -24,9 +21,14 @@ header {
     height: 85px;
 }
 
+header img{
+    width: 120px;
+    margin-right: 49%;
+}
+
 header h1 {
     display: inline-flex;
-    background-color: rgb(121, 147, 68);
+    /* background-color: rgb(121, 147, 68); */
     font-size: 3rem;
     color: var(--heading-color);
     margin-left: 15px;
@@ -46,15 +48,6 @@ header nav ul li {
     font-size: 1.5rem;
 }
 
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin: 3rem;
-}
-
-
 aside {
     flex: 1;
     color: var(--heading-color);
@@ -66,18 +59,36 @@ aside {
     /* border-right: solid black; */
 }
 
+footer {
+    text-align: center;
+    font-size: 1rem;
+}
+
 aside h2 {
     font-size: 2rem;
     text-align: right;
     padding-right: 10px;
 }
 
-h2 {
-    font-size: 2rem;
+.bigger-card h2, .card h2 {
+    font-size: 1.5rem;
+    /* position: relative;
+    bottom: 70px;
+    left: 16px;
+    background-color: rgb(233, 219, 219);
+    margin-right: 46%; */
+    padding-left: 2%;
+
 }
 
-h3 {
-    font-size: 1.25rem;
+.bigger-card h3, .card h3 {
+    font-size: 1rem;
+    padding-left: 2%;
+    /* position: relative;
+    bottom: 70px;
+    left: 16px;
+    background-color: rgb(233, 219, 219);
+    margin-right: 60%; */
 }
 
 .banner {
@@ -99,16 +110,30 @@ h3 {
    position: relative;
    top: 50%;
    left: 70%;
-   color: white;
+   background-color:black;
+   margin-bottom: 75px;
+   padding-top: 15px;
+   color: var(--heading-color);
+   font-size: 2rem;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem;
 }
 
 .aside-content {
     flex: 4;
+    display: flex;
+    flex-wrap: wrap;
     font-size: 18px;
     text-align: center;
-    padding-left: 5%;
+    padding-left: 15%;
     padding-right: 5%;
     border-left: solid black;
+    
 }
 
 .aside-content nav ul li {
@@ -125,11 +150,13 @@ h3 {
     border: 2px solid black;
     color: var(--heading-color);
     text-align: left;
-    background-color: red;
-    /* height: 100%;
-    width: 100%; */
-    /* padding: 2rem 1rem 1rem;
-    position: relative; */
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
 }
 
 .bigger-card {
@@ -137,17 +164,44 @@ h3 {
     border: 2px solid black;
     color: var(--heading-color);
     text-align: left;
-    background-color: red;
+    margin-bottom: 20px;
+    
 }
+
+.bigger-card img {
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+}
+    
+header nav ul li:hover {
+    background-color: white;
+    color: #fff;
+}
+      
+header nav ul li:active {
+    font-size: 180%;
+    box-shadow: 0 0 10px #000 inset;
+}
+      
+header nav ul li:focus {
+    outline: none;
+    border-color: #8ac4ff;
+}
+      
+      
+      
+
+
 @media screen and (max-width: 992px) {
     .card {
-        flex-direction: column;
+        width: 50%;
     }
 }
 
 @media screen and (max-width: 768px) {
     .card {
-        flex-direction: column;
+        width: 50%;
     }
 }
 
