@@ -23,7 +23,7 @@ header {
 
 header img{
     width: 120px;
-    margin-right: 49%;
+    margin-right: 45%;
 }
 
 header h1 {
@@ -129,7 +129,7 @@ aside h2 {
     display: flex;
     flex-wrap: wrap;
     font-size: 18px;
-    text-align: center;
+    text-align: left;
     padding-left: 15%;
     padding-right: 5%;
     border-left: solid black;
@@ -193,7 +193,7 @@ header nav ul li:focus {
       
 
 
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
     .card {
         width: 50%;
     }
@@ -204,4 +204,4 @@ header nav ul li:focus {
         width: 50%;
     }
 }
-
+ */
